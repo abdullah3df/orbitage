@@ -16,14 +16,19 @@
     <meta property="og:url" content="https://orbitage.online">
     <meta property="og:title" content="Orbitage ⏳ مستكشف الزمن الكوني الخارق | Cosmic Time Explorer">
     <meta property="og:description" content="ادخل بياناتك وشاهد عداد عمرك وهو يطير بالثواني بشكل حي! اكتشف لقبك الكوني وثروتك الزمنية الفلكية الآن.">
-    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/3850/3850312.png">
+    <meta property="og:image" content="https://orbitage.online/icon.png">
 
     <!-- وسوم مشاركة الرابط على منصة تويتر (Twitter Cards) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://orbitage.online">
     <meta name="twitter:title" content="Orbitage ⏳ Cosmic Time Explorer">
     <meta name="twitter:description" content="Discover your running lifetime in live milliseconds and biological space stats dynamically!">
-    <meta name="twitter:image" content="https://cdn-icons-png.flaticon.com/512/3850/3850312.png">
+    <meta name="twitter:image" content="https://orbitage.online/icon.png">
+
+    <!-- وسوم الأيقونة الرسمية لمحركات البحث والأجهزة (Favicon & Touch Icons) -->
+    <link rel="icon" type="image/png" sizes="192x192" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="theme-color" content="#f59e0b">
 
     <!-- البيانات الهيكلية لمحرك البحث جوجل (JSON-LD Schema Markup) -->
     <script type="application/ld+json">
@@ -138,7 +143,7 @@
                 </button>
             </div>
 
-            <!-- زر إضافة الويب لشاشة الهاتف الرئيسي (مخفي افتراضياً ويظهر عند الدعم) -->
+            <!-- زر إضافة الويب لشاشة الهاتف الرئيسي -->
             <div id="pwa-install-row" class="hidden max-w-sm mx-auto pt-2">
                 <button id="btn-pwa-install" 
                     class="w-full py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 font-bold rounded-xl text-xs text-white shadow-[0_0_15px_rgba(6,182,212,0.3)] border border-cyan-400/20 tracking-wide transition-all transform active:scale-95">
@@ -523,7 +528,7 @@
             document.getElementById('t-c-heart').innerText = langData.cHeart;
             document.getElementById('t-c-space').innerText = langData.cSpace;
             document.getElementById('t-c-sleep').innerText = langData.cSleep;
-            document.getElementById('screenshot-tip').innerText = langData.screenshotTip;
+            document.getElementById('t-screenshot-tip').innerText = langData.screenshotTip;
             document.getElementById('t-card-days-lbl').innerText = langData.cardDaysLbl;
             document.getElementById('t-card-legal').innerText = langData.cardLegal;
             document.getElementById('t-btn-reset').innerText = langData.btnReset;
@@ -619,7 +624,6 @@
         }
 
         function shareAppUrlWithHotText() {
-            // تثبيت رابط الدومين الرسمي الجديد لضمان القراءة الصحيحة من زواحف الأرشفة وسيرفرات توجيه الواتساب
             const currentUrl = "https://orbitage.online";
             const langData = TRANSLATIONS[currentLang];
             const textToCopy = langData.viralMsg(globalUserName, globalDays.toLocaleString(), globalRank, currentUrl);
