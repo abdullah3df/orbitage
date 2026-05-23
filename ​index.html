@@ -65,7 +65,6 @@
         }
         .bg-glow { animation: pulseGlow 8s infinite ease-in-out; }
 
-        /* حركة الحلقات الكونية النباضة المحيطة بالزر */
         @keyframes cyberRadar {
             0% { transform: scale(0.8); opacity: 0.8; }
             50% { opacity: 0.4; }
@@ -240,19 +239,11 @@
     <!-- ================= زر المشاركة العائم المتطور السيبراني (Cyber HUD Widget) ================= -->
     <div id="floating-share-container" class="fixed bottom-6 right-6 left-auto z-50 pointer-events-auto">
         <div class="relative w-16 h-16 flex items-center justify-center group cursor-pointer" onclick="shareAppUrlWithHotText()">
-            
-            <!-- موجات الرادار النيونية الانبعاثية المحيطة بالزر -->
             <div class="absolute inset-0 border border-amber-500/40 rounded-full radar-ring pointer-events-none"></div>
             <div class="absolute inset-0 border border-orange-500/30 rounded-full radar-ring-delayed pointer-events-none"></div>
-            
-            <!-- توهج الخلفية المغناطيسي الخلفي -->
             <div class="absolute inset-2 bg-gradient-to-tr from-amber-500 to-orange-600 rounded-full blur-md opacity-40 group-hover:opacity-100 group-hover:blur-xl transition-all duration-500"></div>
-            
-            <!-- جسم الهيكل الخارجي للزر (الدرع الزجاجي الشفاف) -->
             <button aria-label="Cyber Share System" 
                 class="absolute inset-0 bg-slate-950/80 backdrop-blur-md border-2 border-slate-800 group-hover:border-amber-400/80 rounded-full flex items-center justify-center shadow-[inset_0_0_15px_rgba(245,158,11,0.1)] transition-all duration-300 transform active:scale-90">
-                
-                <!-- الأيقونة التجريدية المخصصة للمشاركة والاتصال الكوني -->
                 <div class="relative w-6 h-6 text-amber-400 group-hover:text-white transition-colors duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full">
                         <line x1="22" y1="2" x2="11" y2="13"></line>
@@ -260,8 +251,6 @@
                     </svg>
                 </div>
             </button>
-            
-            <!-- إطار مؤشر دقيق جداً يحاكي شاشات الـ HUD العسكرية والمستقبلية -->
             <div class="absolute -inset-1 border border-dashed border-amber-500/10 rounded-full animate-[spin_20s_linear_infinite] pointer-events-none group-hover:border-amber-500/30"></div>
         </div>
     </div>
@@ -289,7 +278,7 @@
                 viralMsg: (name, days, rank, url) => `🚨 صدمة عمري! جربت هالموقع وطلع عشت أكثر من ${days} يوم وقلبي دق مليارات المرات.. وطلعت برحلة بالفضاء حول الشمس ملايين الكيلومترات وأنا جالس مكاني! 🤯🪐\n\nالموقع عطاني لقب: [ ${rank} ] 👑🔥\n\nاتحداكم تطلع أرقامكم وتنافسوني، كم ثانية عشتوا حتى الآن؟ ادخل اسمك وتاريخ ميلادك وشوف وعمرك يطير بالثواني! 👇🏃‍♂️\n${url}`
             },
             en: {
-                dir: "ltr", langBtn: "Deutsch 🌐", nextLang: "de", mainTitle: "Cosmic Time Explorer",
+                dir: "ltr", langBtn: "العربية 🌐", nextLang: "ar", mainTitle: "Cosmic Time Explorer",
                 mainDesc: "Enter your personal details to sync with live biological and astronomical counters measuring your miraculous journey through the cosmos.",
                 labelName: "Name or Nickname:", placeholderName: "Type your name here...",
                 labelManualAge: "Or enter your age directly in years:", placeholderManualAge: "e.g. 25",
@@ -306,82 +295,6 @@
                 months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
                 ranks: { elder: "The Ultimate Time Billionaire 👑", mid: "The Master Time-Traveler 🌀", young: "Emperor of Rapid Seconds ⚡", fresh: "The Rising Cosmic Nomad 🚀" },
                 viralMsg: (name, days, rank, url) => `🚨 Mind Blown! I just checked my stats on this site and found out I've lived for over ${days} days, my heart beat billions of times, and I've traveled millions of kilometers through deep space while sitting on my couch! 🤯🪐\n\nIt gave me the Cosmic Title: [ ${rank} ] 👑🔥\n\nI dare you to calculate your stats and beat me! 👇🏃‍♂️\n\n${url}`
-            },
-            de: {
-                dir: "ltr", langBtn: "Español 🌐", nextLang: "es", mainTitle: "Kosmischer Zeitforscher",
-                mainDesc: "Geben Sie Ihre persönlichen Daten ein, um biologische und astronomische Echtzeit-Zähler mit Ihrer wunderbaren Reise durch den Kosmos zu synchronisieren.",
-                labelName: "Name oder Spitzname:", placeholderName: "Geben Sie Ihren Namen ein...",
-                labelManualAge: "Oder geben Sie Ihr Alter direkt in Jahren ein:", placeholderManualAge: "z.B. 25",
-                labelDob: "Oder wählen Sie Ihr echtes Geburtsdatum:", btnStart: "Entsperren Sie Ihren kosmischen Reichtum 🚀",
-                pwaInstallTxt: "📲 Zum Startbildschirm hinzufügen",
-                quantumBadge: "⚡ QUANTENZÄHLER IN ECHTZEIT", hello: "Hallo", statsLead: "Deine aktuellen kosmischen Statistiken:",
-                cSeconds: "Gesamtsekunden auf der Erde ⏱️", cHeart: "Ungefähre Herzschläge ❤️",
-                cSpace: "Reise im Weltraum um die Sonne 🌍", cSpaceUnit: "km", cSleep: "Geschätzte Träume & Schlaf 💤", cSleepUnit: "Male",
-                screenshotTip: "📸 Machen Sie einen Screenshot Ihres Zertifikats:", cardDaysLbl: "Gesamtlebensdauer in vollen Tagen:",
-                cardLegal: "Aufgrund dieses Weltraumdokuments wird bescheinigt, dass dieses menschliche Wesen über einen immensen kosmischen Zeitreichtum verfügt.",
-                btnReset: "🔄 Anderes Datum prüfen", btnShare: "🔗 Herausforderung teilen 🚀",
-                alertCopy: "✨ Erfolgreich kopiert!",
-                pickDay: "Tag", pickMonth: "Monat", pickYear: "Jahr", titleRank: "Kosmischer Titel: ",
-                months: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
-                ranks: { elder: "Der ultimative Zeitmillionär 👑", mid: "Der Meister-Zeitreisende 🌀", young: "Kaiser der schnellen Sekunden ⚡", fresh: "Der aufstrebende kosmische Nomade 🚀" },
-                viralMsg: (name, days, rank, url) => `🚨 Wahnsinn! Ich habe meine Statistiken überprüft: Ich habe über ${days} Tage gelebt. 🤯🪐\n\nMein kosmischer Titel: [ ${rank} ] 👑🔥\n\n${url}`
-            },
-            es: {
-                dir: "ltr", langBtn: "Türkçe 🌐", nextLang: "tr", mainTitle: "Explorador del Tiempo Cósmico",
-                mainDesc: "Introduce tus datos personales para sincronizarte con contadores biológicos y astronómicos en vivo.",
-                labelName: "Nombre o Apodo:", placeholderName: "Escribe tu nombre aquí...",
-                labelManualAge: "O introduce tu edad directamente en años:", placeholderManualAge: "ej. 25",
-                labelDob: "O selecciona tu fecha real de nacimiento:", btnStart: "Desbloquea tu Riqueza Cósmica Ahora 🚀",
-                pwaInstallTxt: "📲 Añadir a la pantalla de inicio",
-                quantumBadge: "⚡ CONTADORES CUÁNTICOS EN TIEMPO REAL", hello: "Hola", statsLead: "tus estadísticas cósmicas en vivo:",
-                cSeconds: "Segundos Totales en la Tierra ⏱️", cHeart: "Latidos Cardíacos Aproximados ❤️",
-                cSpace: "Espacio Recorrido Alrededor del Sol 🌍", cSpaceUnit: "km", cSleep: "Total Estimado de Sueños y Descanso 💤", cSleepUnit: "veces",
-                screenshotTip: "📸 Haz una captura de pantalla:", cardDaysLbl: "Vida útil total en días completos:",
-                cardLegal: "En virtud de este documento espacial encriptado, se certifica que esta entidad humana posee una inmensa riqueza temporal cósmica.",
-                btnReset: "🔄 Consultar Otra Fecha", btnShare: "🔗 Compartir Desafío 🚀",
-                alertCopy: "✨ ¡Copiado con éxito!",
-                pickDay: "Día", pickMonth: "Mes", pickYear: "Año", titleRank: "Título Cósmico: ",
-                months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
-                ranks: { elder: "El Multimillonario del Tiempo Supremo 👑", mid: "El Maestro del Tiempo Viajero 🌀", young: "Emperador de los Segundos Rápidos ⚡", fresh: "El Nómada Cósmico Naciente 🚀" },
-                viralMsg: (name, days, rank, url) => `🚨 ¡Impresionante! Revisé mis estadísticas y descubrí que he vivido más de ${days} días. 🤯🪐\n\nTítulo Cósmico: [ ${rank} ] 👑🔥\n\n${url}`
-            },
-            tr: {
-                dir: "ltr", langBtn: "中文 🌐", nextLang: "zh", mainTitle: "Kozmik Zaman Gezgini",
-                mainDesc: "Kozmostaki mucizevi yolculuğunuzu ölçen canlı sayaçlarla senkronize olun.",
-                labelName: "İsim veya Takma Ad:", placeholderName: "Buraya isminizi yazın...",
-                labelManualAge: "Veya yaşınızı doğrudan yıl olarak girin:", placeholderManualAge: "örn. 25",
-                labelDob: "Veya gerçek doğum tarihinizi seçin:", btnStart: "Kozmik Servetini Şimdi Aç 🚀",
-                pwaInstallTxt: "📲 Ana Ekrana Ekle",
-                quantumBadge: "⚡ GERÇEK ZAMANLI QUANTUM SAYAÇLARI", hello: "Merhaba", statsLead: "şu anki canlı kozmik istatistiklerin:",
-                cSeconds: "Dünyadaki Toplam Saniye ⏱️", cHeart: "Yaklaşık Kalp Atışı ❤️",
-                cSpace: "Güneş Etrafında Kat Edilen Mesafe 🌍", cSpaceUnit: "km", cSleep: "Tahmini Toplam Rüya ve Uyku 💤", cSleepUnit: "kez",
-                screenshotTip: "📸 Ekran görüntüsü al:", cardDaysLbl: "Tam Gün Olarak Toplam Ömür:",
-                cardLegal: "Bu şifreli uzay belgesi uyarınca, muazzam bir kozmik zamansal zenginliğe sahip olduğunuz onaylanmıştır.",
-                btnReset: "🔄 Başka Bir Tarih Kontrol Et", btnShare: "🔗 Meydan Okumayı Paylaş 🚀",
-                alertCopy: "✨ Başarıyla kopyalandı!",
-                pickDay: "Gün", pickMonth: "Ay", pickYear: "Yıl", titleRank: "Kozmik Unvan: ",
-                months: ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"],
-                ranks: { elder: "En Büyük Zaman Milyarderi 👑", mid: "Usta Zaman Gezgini 🌀", young: "Hızlı Saniyelerin İmparatoru ⚡", fresh: "Yükselen Kozmik Göçebe 🚀" },
-                viralMsg: (name, days, rank, url) => `🚨 Aklım Başından Gitti! Bu sitede istatistiklerimi kontrol ettim`
-            },
-            zh: {
-                dir: "ltr", langBtn: "العربية 🌐", nextLang: "ar", mainTitle: "宇宙时间探索者",
-                mainDesc: "输入您的个人信息与实时计数器同步。",
-                labelName: "姓名或昵称:", placeholderName: "在此处输入您的名字...",
-                labelManualAge: "或直接输入您的年龄（岁）:", placeholderManualAge: "例如：25",
-                labelDob: "或选择您的真实出生日期:", btnStart: "立即解锁您的宇宙财富 🚀",
-                pwaInstallTxt: "📲 添加至主屏幕",
-                quantumBadge: "⚡ 实时量子计数器", hello: "嘿", statsLead: "您当前的实时宇宙数据：",
-                cSeconds: "地球上的总秒数 ⏱️", cHeart: "约心跳次数 ❤️",
-                cSpace: "绕太阳运行的空间距离 🌍", cSpaceUnit: "公里", cSleep: "估计总睡眠与梦境 💤", cSleepUnit: "次",
-                screenshotTip: "📸 截屏您的专属宇宙证书：", cardDaysLbl: "完整天数的总寿命:",
-                cardLegal: "特此证明该人类实体拥有在时空结构中动态流转的巨大宇宙时间财富。",
-                btnReset: "🔄 检查其他日期", btnShare: "🔗 分享挑战 🚀",
-                alertCopy: "✨ 复制成功！",
-                pickDay: "日", pickMonth: "月", pickYear: "年", titleRank: "宇宙称号: ",
-                months: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
-                ranks: { elder: "终极时间亿万富翁 👑", mid: "时空旅行大师 🌀", young: "极速秒之皇帝 ⚡", fresh: "崛起的宇宙游牧者 🚀" },
-                viralMsg: (name, days, rank, url) => `🚨 惊呆了！我刚刚在这个网站上查了我的数据！ 🤯🪐\n\n${url}`
             }
         };
 
@@ -395,42 +308,21 @@
 
         window.addEventListener('DOMContentLoaded', () => {
             const browserLang = (navigator.language || navigator.userLanguage).toLowerCase();
-            if (browserLang.startsWith('de')) currentLang = 'de';
-            else if (browserLang.startsWith('es')) currentLang = 'es';
-            else if (browserLang.startsWith('tr')) currentLang = 'tr';
-            else if (browserLang.startsWith('zh')) currentLang = 'zh';
-            else if (browserLang.startsWith('en')) currentLang = 'en';
-            else currentLang = 'ar';
+            currentLang = browserLang.startsWith('en') ? 'en' : 'ar';
             
             buildRollerSelects();
             applyLanguage();
         });
 
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            document.getElementById('pwa-install-row').classList.remove('hidden');
-        });
-
-        document.getElementById('btn-pwa-install').addEventListener('click', async () => {
-            if (!deferredPrompt) return;
-            deferredPrompt.prompt();
-            const { outcome } = await deferredPrompt.userChoice;
-            if (outcome === 'accepted') {
-                console.log('PWA system deployed successfully.');
-            }
-            deferredPrompt = null;
-            document.getElementById('pwa-install-row').classList.add('hidden');
-        });
-
         function buildRollerSelects() {
+            const daySelect = document.getElementById('scroll-day');
             const monthSelect = document.getElementById('scroll-month');
             const yearSelect = document.getElementById('scroll-year');
 
-            monthSelect.innerHTML = '';
-            yearSelect.innerHTML = '';
+            if (!daySelect || !monthSelect || !yearSelect) return;
 
             const currentYear = new Date().getFullYear();
+            yearSelect.innerHTML = '';
             for(let y = currentYear; y >= 1920; y--) {
                 yearSelect.options[yearSelect.options.length] = new Option(y, y);
             }
@@ -441,9 +333,12 @@
 
         function populateMonths() {
             const monthSelect = document.getElementById('scroll-month');
+            if (!monthSelect) return;
             const currentSelectedMonth = monthSelect.value || 1;
             monthSelect.innerHTML = '';
-            TRANSLATIONS[currentLang].months.forEach((mName, idx) => {
+            
+            const langData = TRANSLATIONS[currentLang] || TRANSLATIONS['ar'];
+            langData.months.forEach((mName, idx) => {
                 monthSelect.options[monthSelect.options.length] = new Option(mName, idx + 1);
             });
             monthSelect.value = currentSelectedMonth;
@@ -453,6 +348,8 @@
             const daySelect = document.getElementById('scroll-day');
             const monthSelect = document.getElementById('scroll-month');
             const yearSelect = document.getElementById('scroll-year');
+
+            if (!daySelect || !monthSelect || !yearSelect) return;
 
             const currentYear = new Date().getFullYear();
             const selectedYear = parseInt(yearSelect.value) || currentYear;
@@ -467,15 +364,12 @@
                 daySelect.options[daySelect.options.length] = new Option(dayValue, d);
             }
 
-            if (previousSelectedDay <= daysInMonth) {
-                daySelect.value = previousSelectedDay;
-            } else {
-                daySelect.value = daysInMonth;
-            }
+            daySelect.value = previousSelectedDay <= daysInMonth ? previousSelectedDay : daysInMonth;
         }
 
         function toggleInputMethods(inputElement) {
             const dobContainer = document.getElementById('dob-selectors-container');
+            if (!dobContainer) return;
             if (inputElement.value.trim() !== "") {
                 dobContainer.classList.add('opacity-40');
             } else {
@@ -484,59 +378,53 @@
         }
 
         function applyLanguage() {
-            const langData = TRANSLATIONS[currentLang];
+            const langData = TRANSLATIONS[currentLang] || TRANSLATIONS['ar'];
             document.documentElement.lang = currentLang;
             document.documentElement.dir = langData.dir;
             document.body.setAttribute('dir', langData.dir);
 
-            const floatingBtn = document.getElementById('floating-share-container');
-            if (floatingBtn) {
-                if (langData.dir === 'rtl') {
-                    floatingBtn.classList.remove('left-6', 'right-auto');
-                    floatingBtn.classList.add('right-6', 'left-auto');
-                } else {
-                    floatingBtn.classList.remove('right-6', 'left-auto');
-                    floatingBtn.classList.add('left-6', 'right-auto');
-                }
-            }
-
-            document.getElementById('lang-switch-btn').innerText = langData.langBtn;
+            safeSetText('lang-switch-btn', langData.langBtn);
             if(document.getElementById('lang-switch-btn-results')) {
-                document.getElementById('lang-switch-btn-results').innerText = langData.langBtn;
+                safeSetText('lang-switch-btn-results', langData.langBtn);
             }
             
-            document.getElementById('t-main-title').innerText = langData.mainTitle;
-            document.getElementById('t-main-desc').innerText = langData.mainDesc;
-            document.getElementById('t-label-name').innerText = langData.labelName;
-            document.getElementById('user-name').placeholder = langData.placeholderName;
-            document.getElementById('t-label-manual-age').innerText = langData.labelManualAge;
-            document.getElementById('user-manual-age').placeholder = langData.placeholderManualAge;
-            document.getElementById('t-label-dob').innerText = langData.labelDob;
-            document.getElementById('t-btn-start').innerText = langData.btnStart;
-            document.getElementById('btn-pwa-install').innerText = langData.pwaInstallTxt;
+            safeSetText('t-main-title', langData.mainTitle);
+            safeSetText('t-main-desc', langData.mainDesc);
+            safeSetText('t-label-name', langData.labelName);
             
-            document.getElementById('t-pick-day').innerText = langData.pickDay;
-            document.getElementById('t-pick-month').innerText = langData.pickMonth;
-            document.getElementById('t-pick-year').innerText = langData.pickYear;
+            const nameInp = document.getElementById('user-name');
+            if(nameInp) nameInp.placeholder = langData.placeholderName;
+
+            safeSetText('t-label-manual-age', langData.labelManualAge);
+            
+            const ageInp = document.getElementById('user-manual-age');
+            if(ageInp) ageInp.placeholder = langData.placeholderManualAge;
+
+            safeSetText('t-label-dob', langData.labelDob);
+            safeSetText('t-btn-start', langData.btnStart);
+            safeSetText('btn-pwa-install', langData.pwaInstallTxt);
+            safeSetText('t-pick-day', langData.pickDay);
+            safeSetText('t-pick-month', langData.pickMonth);
+            safeSetText('t-pick-year', langData.pickYear);
 
             populateMonths();
             
-            document.getElementById('t-quantum-badge').innerText = langData.quantumBadge;
-            document.getElementById('t-hello').innerText = langData.hello;
-            document.getElementById('t-stats-lead').innerText = langData.statsLead;
-            document.getElementById('t-c-seconds').innerText = langData.cSeconds;
-            document.getElementById('t-c-heart').innerText = langData.cHeart;
-            document.getElementById('t-c-space').innerText = langData.cSpace;
-            document.getElementById('t-c-sleep').innerText = langData.cSleep;
-            document.getElementById('t-screenshot-tip').innerText = langData.screenshotTip;
-            document.getElementById('t-card-days-lbl').innerText = langData.cardDaysLbl;
-            document.getElementById('t-card-legal').innerText = langData.cardLegal;
-            document.getElementById('t-btn-reset').innerText = langData.btnReset;
-            document.getElementById('t-btn-share').innerText = langData.btnShare;
+            safeSetText('t-quantum-badge', langData.quantumBadge);
+            safeSetText('t-hello', langData.hello);
+            safeSetText('t-stats-lead', langData.statsLead);
+            safeSetText('t-c-seconds', langData.cSeconds);
+            safeSetText('t-c-heart', langData.cHeart);
+            safeSetText('t-c-space', langData.cSpace);
+            safeSetText('t-c-sleep', langData.cSleep);
+            safeSetText('t-screenshot-tip', langData.screenshotTip);
+            safeSetText('t-card-days-lbl', langData.cardDaysLbl);
+            safeSetText('t-card-legal', langData.cardLegal);
+            safeSetText('t-btn-reset', langData.btnReset);
+            safeSetText('t-btn-share', langData.btnShare);
         }
 
         function toggleLanguage() {
-            currentLang = TRANSLATIONS[currentLang].nextLang;
+            currentLang = currentLang === 'ar' ? 'en' : 'ar';
             applyLanguage();
             if (birthTimestamp > 0) {
                 determineRankAndLabels();
@@ -544,13 +432,16 @@
         }
 
         function calculateAgeCapsule() {
-            const name = document.getElementById('user-name').value.trim();
-            const manualAgeInput = document.getElementById('user-manual-age').value.trim();
+            const nameEl = document.getElementById('user-name');
+            const manualAgeEl = document.getElementById('user-manual-age');
+            if(!nameEl) return;
+
+            const name = nameEl.value.trim();
+            const manualAgeInput = manualAgeEl ? manualAgeEl.value.trim() : "";
             const now = Date.now();
 
             if (!name) {
-                const errMsg = currentLang === 'ar' ? 'الرجاء إدخال الاسم أولاً.' : 'Please enter your name first.';
-                alert(errMsg);
+                alert(currentLang === 'ar' ? 'الرجاء إدخال الاسم أولاً.' : 'Please enter your name first.');
                 return;
             }
 
@@ -560,17 +451,19 @@
                     alert('Please enter a valid age.');
                     return;
                 }
-                
                 const estimatedBirthYear = new Date().getFullYear() - ageYears;
-                const estimatedDob = new Date(estimatedBirthYear, 0, 1, 0, 0, 0, 0); 
-                birthTimestamp = estimatedDob.getTime();
+                birthTimestamp = new Date(estimatedBirthYear, 0, 1).getTime();
             } else {
-                const day = parseInt(document.getElementById('scroll-day').value);
-                const month = parseInt(document.getElementById('scroll-month').value) - 1;
-                const year = parseInt(document.getElementById('scroll-year').value);
+                const d = document.getElementById('scroll-day');
+                const m = document.getElementById('scroll-month');
+                const y = document.getElementById('scroll-year');
+                if(!d || !m || !y) return;
+
+                const day = parseInt(d.value);
+                const month = parseInt(m.value) - 1;
+                const year = parseInt(y.value);
                 
-                const dobDate = new Date(year, month, day, 0, 0, 0, 0);
-                birthTimestamp = dobDate.getTime();
+                birthTimestamp = new Date(year, month, day).getTime();
 
                 if (birthTimestamp > now) {
                     alert('Date cannot be in the future!');
@@ -579,8 +472,8 @@
             }
 
             globalUserName = name;
-            document.getElementById('res-name').innerText = name;
-            document.getElementById('card-title-name').innerText = name;
+            safeSetText('res-name', name);
+            safeSetText('card-title-name', name);
 
             determineRankAndLabels();
             switchView('view-results');
@@ -594,67 +487,65 @@
             const diffInMs = now - birthTimestamp;
             globalDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
             
-            document.getElementById('card-days').innerText = globalDays.toLocaleString();
+            const cardDaysEl = document.getElementById('card-days');
+            if(cardDaysEl) cardDaysEl.innerText = globalDays.toLocaleString();
             
-            const rData = TRANSLATIONS[currentLang].ranks;
+            const langData = TRANSLATIONS[currentLang] || TRANSLATIONS['ar'];
+            const rData = langData.ranks;
             if (globalDays > 10000) globalRank = rData.elder;
             else if (globalDays > 7000) globalRank = rData.mid;
             else if (globalDays > 4000) globalRank = rData.young;
             else globalRank = rData.fresh;
 
-            document.getElementById('card-rank').innerText = TRANSLATIONS[currentLang].titleRank + globalRank;
+            safeSetText('card-rank', langData.titleRank + globalRank);
         }
 
         function updateLiveCounters() {
             const now = Date.now();
             const diffInSeconds = (now - birthTimestamp) / 1000;
-            const langData = TRANSLATIONS[currentLang];
+            const langData = TRANSLATIONS[currentLang] || TRANSLATIONS['ar'];
 
-            document.getElementById('count-seconds').innerText = diffInSeconds.toFixed(1);
-            
-            const approxHeartBeats = Math.floor(diffInSeconds * 1.25);
-            document.getElementById('count-heart').innerText = approxHeartBeats.toLocaleString();
-            
-            const approxSpaceDistance = Math.floor(diffInSeconds * 29.78);
-            document.getElementById('count-space').innerText = `${approxSpaceDistance.toLocaleString()} ${langData.cSpaceUnit}`;
-            
-            const totalDays = diffInSeconds / (60 * 60 * 24);
-            const approxSleeps = Math.floor(totalDays * 0.95);
-            document.getElementById('count-sleep').innerText = `${approxSleeps.toLocaleString()} ${langData.cSleepUnit}`;
+            const secEl = document.getElementById('count-seconds');
+            const heartEl = document.getElementById('count-heart');
+            const spaceEl = document.getElementById('count-space');
+            const sleepEl = document.getElementById('count-sleep');
+
+            if(secEl) secEl.innerText = diffInSeconds.toFixed(1);
+            if(heartEl) heartEl.innerText = Math.floor(diffInSeconds * 1.25).toLocaleString();
+            if(spaceEl) spaceEl.innerText = `${Math.floor(diffInSeconds * 29.78).toLocaleString()} ${langData.cSpaceUnit}`;
+            if(sleepEl) sleepEl.innerText = `${Math.floor((diffInSeconds / 86400) * 0.95).toLocaleString()} ${langData.cSleepUnit}`;
         }
 
         function shareAppUrlWithHotText() {
             const currentUrl = "https://orbitage.online";
-            const langData = TRANSLATIONS[currentLang];
+            const langData = TRANSLATIONS[currentLang] || TRANSLATIONS['ar'];
             const textToCopy = langData.viralMsg(globalUserName, globalDays.toLocaleString(), globalRank, currentUrl);
 
             if (navigator.share) {
-                navigator.share({
-                    title: 'Orbitage ⏳',
-                    text: textToCopy, url: currentUrl
-                }).catch((error) => console.log('Error Sharing', error));
+                navigator.share({ title: 'Orbitage ⏳', text: textToCopy, url: currentUrl });
             } else {
                 navigator.clipboard.writeText(textToCopy).then(() => {
                     const shareBtn = document.getElementById('t-btn-share');
-                    const originalText = shareBtn.innerText;
-                    shareBtn.innerText = currentLang === 'ar' ? '✅ تم نسخ الرابط والنص!' : '✅ Copied!';
-                    shareBtn.style.background = "linear-gradient(to right, #10B981, #059669)";
-                    setTimeout(() => {
-                        shareBtn.innerText = originalText;
-                        shareBtn.style.background = "";
-                    }, 2500);
-                }).catch(err => {
-                    alert(langData.alertCopy);
+                    if(shareBtn) {
+                        const originalText = shareBtn.innerText;
+                        shareBtn.innerText = currentLang === 'ar' ? '✅ تم نسخ الرابط والنص!' : '✅ Copied!';
+                        setTimeout(() => { shareBtn.innerText = originalText; }, 2500);
+                    }
                 });
             }
         }
 
         function switchView(viewId) {
-            ['view-input', 'view-results'].forEach(id => {
-                document.getElementById(id).classList.add('hidden');
-            });
-            document.getElementById(viewId).classList.remove('hidden');
+            const v1 = document.getElementById('view-input');
+            const v2 = document.getElementById('view-results');
+            if(v1) v1.classList.add('hidden');
+            if(v2) v2.classList.add('hidden');
+            
+            const target = document.getElementById(viewId);
+            if(target) target.classList.remove('hidden');
         }
+        
+        function safeSetText(id, text) { const el = document.getElementById(id); if(el) el.innerText = text; }
     </script>
 </body>
 </html>
