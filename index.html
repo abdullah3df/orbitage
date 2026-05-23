@@ -6,7 +6,7 @@
     
     <!-- ================= إعدادات السيو الاحترافية (Advanced SEO Meta Tags) ================= -->
     <title>Orbitage ⏳ مستكشف الزمن الكوني الخارق | Cosmic Time Explorer</title>
-    <meta name="description" content="اكتشف كبسولتك الزمنية وثروتك الحقيقية في الكون. عدادات حية بيولوجية وفلكية تقيس نبض ثوانيك ورحلتك الإعجازية في الفضاء حول الشمس عبر تطبيق Orbitage.">
+    <meta name="description" content="اكتشف كبسولتك الزمنية وثروتك الحقيقية in الكون. عدادات حية بيولوجية وفلكية تقيس نبض ثوانيك ورحلتك الإعجازية in الفضاء حول الشمس عبر تطبيق Orbitage.">
     <meta name="keywords" content="Orbitage, اوربيتاج, كبسولة زمنية, حساب العمر بالثواني, رحلتك في الفضاء, عداد العمر الحي, Cosmic Time Explorer, Age Capsule, Space Journey Ticker">
     <meta name="author" content="Orbitage">
     <link rel="canonical" href="https://orbitage.online" />
@@ -43,6 +43,18 @@
       "operatingSystem": "All",
       "browserRequirements": "Requires JavaScript. Requires HTML5."
     }
+    </script>
+    
+    <!-- ================= إحصائيات جوجل ومكان كود الخصوصية ================= -->
+    <!-- 1. كود كوكيبوت (Cookiebot): إذا كان لديك سكريبت كوكيبوت، الصقه مباشرة فوق هذا السطر ليتحكم بملفات الارتباط قانونياً -->
+    
+    <!-- 2. كود تحليلات جوجل (Google Analytics 4) ومؤمن بنوع التتبع الاحصائي المجهول لحين موافقة المستخدم -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G30WD044QM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G30WD044QM', { 'anonymize_ip': true });
     </script>
     <!-- =================================================================================== -->
 
@@ -271,7 +283,7 @@
                 screenshotTip: "📸 التقط لقطة شاشة لبطاقتك الكونية لتحدي الأصدقاء:", cardDaysLbl: "العمر الإجمالي الكامل بالأيام:",
                 certTitle: "Official Cosmic Time Certificate",
                 cardLegal: "بموجب هذا المستند الرقمي المشفر، تم إثبات أن هذا الكائن البشري يمتلك ثروة زمنية كونية خارقة تتحرك في نسيج هذا الفضاء اللامتناهي.",
-                btnReset: "🔄 تاريخ آخر", btnShare: "🔗 شارك التحدي وافتح التطبيقات 🚀",
+                btnReset: "🔄 حساب تاريخ آخر", btnShare: "🔗 شارك التحدي وافتح التطبيقات 🚀",
                 pickDay: "اليوم", pickMonth: "الشهر", pickYear: "السنة", titleRank: "اللقب الكوني: ",
                 months: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
                 ranks: { elder: "الملياردير الزمني العظيم 👑", mid: "المسافر المخضرم عبر العصور 🌀", young: "امبراطور الثواني السريعة ⚡", fresh: "المستكشف الزمني الناشئ 🚀" },
@@ -343,7 +355,7 @@
                 pwaInstallTxt: "📲 Ana Ekrana Ekle",
                 quantumBadge: "⚡ GERÇEK ZAMANLI QUANTUM SAYAÇLARI", hello: "Merhaba", statsLead: "şu anki canlı kozmik istatistiklerin:",
                 cSeconds: "Dünyadaki Toplam Saniye ⏱️", cHeart: "Yaklaşık Kalp Atışı ❤️",
-                cSpace: "Güneş Etrafında Kat Edilen Mesafe 🌍", cSpaceUnit: "km", cSleep: "Tahmini Toplam Rüya ve Uyku 💤", cSleepUnit: "kez",
+                cSpace: "Kozmosta Güneş Etrafında Kat Edilen Mesafe 🌍", cSpaceUnit: "km", cSleep: "Tahmini Toplam Rüya ve Uyku 💤", cSleepUnit: "kez",
                 screenshotTip: "📸 Ekran görüntüsü al:", cardDaysLbl: "Tam Gün Olarak Toplam Ömür:",
                 certTitle: "Resmi Kozmik Zaman Sertifikası",
                 cardLegal: "Bu şifreli uzay belgesi uyarınca, muazzam bir kozmik zamansal zenginliğe sahip olduğunuz onaylanmıştır.",
@@ -485,7 +497,7 @@
             const nameInp = document.getElementById('user-name');
             if(nameInp) nameInp.placeholder = langData.placeholderName;
 
-            safeSetText('t-label-manual-age', langData.labelManualAge);
+            safeSetText('t-manual-age', langData.labelManualAge);
             
             const ageInp = document.getElementById('user-manual-age');
             if(ageInp) ageInp.placeholder = langData.placeholderManualAge;
