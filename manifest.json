@@ -1,0 +1,22 @@
+{
+  "short_name": "Orbitage",
+  "name": "Orbitage - Cosmic Time Explorer",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "https://orbitage.online",
+  "background_color": "#030712",
+  "theme_color": "#f59e0b",
+  "display": "standalone",
+  "orientation": "portrait"
+}
