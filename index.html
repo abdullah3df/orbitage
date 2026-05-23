@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl" class="h-full">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <!-- ================= إعدادات السيو الاحترافية (Advanced SEO Meta Tags) ================= -->
     <title>Orbitage ⏳ مستكشف الزمن الكوني الخارق | Cosmic Time Explorer</title>
@@ -74,211 +74,211 @@
         .radar-ring-delayed { animation: cyberRadar 3s infinite cubic-bezier(0.25, 0, 0, 1); animation-delay: 1.5s; }
     </style>
 </head>
-<body class="bg-[#030712] text-slate-100 min-h-full flex flex-col items-center justify-center p-4 relative overflow-x-hidden select-none">
+<body class="bg-[#030712] text-slate-100 min-h-screen w-full flex items-center justify-center p-3 relative overflow-x-hidden select-none">
 
     <!-- تأثيرات الخلفية الكونية البراقة -->
-    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-amber-500/20 to-orange-600/20 rounded-full filter blur-[120px] bg-glow pointer-events-none"></div>
-    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-violet-600/20 to-fuchsia-500/20 rounded-full filter blur-[120px] bg-glow pointer-events-none animate-delay-2000"></div>
+    <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-gradient-to-r from-amber-500/15 to-orange-600/15 rounded-full filter blur-[100px] bg-glow pointer-events-none"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-72 h-72 bg-gradient-to-r from-violet-600/15 to-fuchsia-500/15 rounded-full filter blur-[100px] bg-glow pointer-events-none animate-delay-2000"></div>
 
     <!-- الحاوية الزجاجية الرئيسية المحاطة بحد نيون مشع -->
-    <div class="w-full max-w-xl bg-slate-900/60 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-6 md:p-8 shadow-[0_0_50px_rgba(0,0,0,0.8)] relative z-10 flex flex-col justify-between">
+    <div class="w-full max-w-xl bg-slate-900/70 backdrop-blur-xl border border-slate-700/40 rounded-2xl p-4 md:p-6 shadow-[0_0_40px_rgba(0,0,0,0.8)] relative z-10 my-auto">
         
+        <!-- القائمة المنسدلة الاحترافية لتغيير اللغات المدمجة في ترويسة التطبيق -->
+        <div class="flex justify-between items-center mb-4 border-b border-slate-800/60 pb-2">
+            <span class="cyber-font text-xs font-bold text-amber-400 tracking-wider">ORBITAGE SYSTEM</span>
+            <select id="lang-switcher" onchange="switchLanguage(this.value)" class="bg-slate-950/90 border border-slate-700/50 rounded-lg py-1 px-2 text-xs font-bold text-slate-200 focus:outline-none focus:border-amber-500 cursor-pointer shadow-md">
+                <option value="ar">العربية</option>
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="es">Español</option>
+                <option value="tr">Türkçe</option>
+                <option value="zh">中文</option>
+            </select>
+        </div>
+
         <!-- ================= الشاشة 1: واجهة إدخال البيانات المضيئة ================= -->
-        <div id="view-input" class="text-center space-y-6 py-2">
+        <div id="view-input" class="text-center space-y-5 py-1">
             <div class="relative inline-flex mb-1">
-                <div class="absolute inset-0 bg-amber-500/30 rounded-full blur-xl animate-pulse"></div>
-                <div class="relative p-4 bg-gradient-to-b from-slate-800 to-slate-900 border border-amber-500/30 rounded-2xl text-amber-400 text-3xl shadow-inner">
+                <div class="absolute inset-0 bg-amber-500/20 rounded-full blur-xl animate-pulse"></div>
+                <div class="relative p-3 bg-gradient-to-b from-slate-800 to-slate-900 border border-amber-500/20 rounded-xl text-amber-400 text-2xl shadow-inner">
                     ⏳
                 </div>
             </div>
             
-            <div class="space-y-2">
-                <h1 id="t-main-title" class="text-2xl md:text-4xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-orange-400 to-yellow-200">
+            <div class="space-y-1">
+                <h1 id="t-main-title" class="text-xl md:text-3xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-orange-400 to-yellow-200">
                     مستكشف الكبسولة الزمنية
                 </h1>
-                <p id="t-main-desc" class="text-slate-400 text-xs md:text-sm max-w-md mx-auto leading-relaxed">
+                <p id="t-main-desc" class="text-slate-400 text-[11px] md:text-xs max-w-sm mx-auto leading-relaxed">
                     ادخل بياناتك الشخصية لتفعيل العدادات البيولوجية والفلكية الحية التي تقيس رحلتك الإعجازية في الكون حتى هذه اللحظة.
                 </p>
             </div>
             
-            <div class="space-y-4 pt-2 max-w-sm mx-auto text-right">
+            <div class="space-y-3 pt-1 max-w-sm mx-auto text-right">
                 <!-- حقل الاسم -->
-                <div class="space-y-1.5">
-                    <label id="t-label-name" class="text-[11px] font-bold text-amber-400/80 tracking-wider block mr-1 uppercase">الاسم أو اللقب:</label>
+                <div class="space-y-1">
+                    <label id="t-label-name" class="text-[10px] font-bold text-amber-400/80 tracking-wider block mr-1 uppercase">الاسم أو اللقب:</label>
                     <input type="text" id="user-name" placeholder="اكتب اسمك الكريم هنا..." 
-                        class="w-full px-5 py-3 bg-slate-950/80 border border-slate-800 rounded-xl focus:outline-none focus:border-amber-500 text-center font-bold text-white placeholder-slate-700 text-base shadow-inner">
+                        class="w-full px-4 py-2 bg-slate-950/80 border border-slate-800 rounded-lg focus:outline-none focus:border-amber-500 text-center font-bold text-white placeholder-slate-700 text-sm shadow-inner">
                 </div>
 
                 <!-- حقل كتابة العمر يدوياً -->
-                <div class="space-y-1.5">
-                    <label id="t-label-manual-age" class="text-[11px] font-bold text-amber-400/80 tracking-wider block mr-1 uppercase">أو اكتب عمرك مباشرة بالسنوات:</label>
+                <div class="space-y-1">
+                    <label id="t-label-manual-age" class="text-[10px] font-bold text-amber-400/80 tracking-wider block mr-1 uppercase">أو اكتب عمرك مباشرة بالسنوات:</label>
                     <input type="number" id="user-manual-age" placeholder="مثال: 25" min="1" max="110" oninput="toggleInputMethods(this)"
-                        class="w-full px-5 py-3 bg-slate-950/80 border border-slate-800 rounded-xl focus:outline-none focus:border-amber-500 text-center font-bold text-white placeholder-slate-700 text-base shadow-inner cyber-font">
+                        class="w-full px-4 py-2 bg-slate-950/80 border border-slate-800 rounded-lg focus:outline-none focus:border-amber-500 text-center font-bold text-white placeholder-slate-700 text-sm shadow-inner cyber-font">
                 </div>
 
                 <!-- أسطوانة التمرير الثلاثية للتواريخ -->
-                <div id="dob-selectors-container" class="space-y-1.5 transition-all duration-300">
-                    <label id="t-label-dob" class="text-[11px] font-bold text-amber-400/80 tracking-wider block mr-1 uppercase">أو اختر تاريخ ميلادك الحقيقي:</label>
+                <div id="dob-selectors-container" class="space-y-1 transition-all duration-300">
+                    <label id="t-label-dob" class="text-[10px] font-bold text-amber-400/80 tracking-wider block mr-1 uppercase">أو اختر تاريخ ميلادك الحقيقي:</label>
                     
-                    <div class="grid grid-cols-3 gap-2 bg-slate-950/90 border border-slate-800 p-3 rounded-2xl relative shadow-inner" dir="ltr">
+                    <div class="grid grid-cols-3 gap-2 bg-slate-950/90 border border-slate-800 p-2 rounded-xl relative shadow-inner" dir="ltr">
                         <div class="flex flex-col items-center">
-                            <span id="t-pick-day" class="text-[10px] font-bold text-slate-500 uppercase mb-1">اليوم</span>
-                            <select id="scroll-day" class="w-full bg-slate-900 border border-slate-700/60 rounded-xl py-2 px-1 text-center font-bold text-sm text-slate-200 focus:outline-none focus:border-amber-500/80 cyber-font cursor-pointer shadow-md"></select>
+                            <span id="t-pick-day" class="text-[9px] font-bold text-slate-500 uppercase mb-1">اليوم</span>
+                            <select id="scroll-day" class="w-full bg-slate-900 border border-slate-700/60 rounded-lg py-1.5 px-0.5 text-center font-bold text-xs text-slate-200 focus:outline-none focus:border-amber-500/80 cyber-font cursor-pointer shadow-md"></select>
                         </div>
                         <div class="flex flex-col items-center">
-                            <span id="t-pick-month" class="text-[10px] font-bold text-slate-500 uppercase mb-1">الشهر</span>
-                            <select id="scroll-month" onchange="updateDays()" class="w-full bg-slate-900 border border-slate-700/60 rounded-xl py-2 px-1 text-center font-bold text-sm text-slate-200 focus:outline-none focus:border-amber-500/80 cursor-pointer shadow-md"></select>
+                            <span id="t-pick-month" class="text-[9px] font-bold text-slate-500 uppercase mb-1">الشهر</span>
+                            <select id="scroll-month" onchange="updateDays()" class="w-full bg-slate-900 border border-slate-700/60 rounded-lg py-1.5 px-0.5 text-center font-bold text-xs text-slate-200 focus:outline-none focus:border-amber-500/80 cursor-pointer shadow-md"></select>
                         </div>
                         <div class="flex flex-col items-center">
-                            <span id="t-pick-year" class="text-[10px] font-bold text-slate-500 uppercase mb-1">السنة</span>
-                            <select id="scroll-year" onchange="updateDays()" class="w-full bg-slate-900 border border-slate-700/60 rounded-xl py-2 px-1 text-center font-bold text-sm text-slate-200 focus:outline-none focus:border-amber-500/80 cyber-font cursor-pointer shadow-md"></select>
+                            <span id="t-pick-year" class="text-[9px] font-bold text-slate-500 uppercase mb-1">السنة</span>
+                            <select id="scroll-year" onchange="updateDays()" class="w-full bg-slate-900 border border-slate-700/60 rounded-lg py-1.5 px-0.5 text-center font-bold text-xs text-slate-200 focus:outline-none focus:border-amber-500/80 cyber-font cursor-pointer shadow-md"></select>
                         </div>
                     </div>
                 </div>
                 
                 <button onclick="calculateAgeCapsule()" id="t-btn-start" 
-                    class="w-full py-4 bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 font-black rounded-xl shadow-[0_4px_20px_rgba(245,158,11,0.3)] transition-all transform active:scale-98 text-slate-950 text-base font-black tracking-wider pt-3">
+                    class="w-full py-3 bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 font-black rounded-lg shadow-[0_4px_15px_rgba(245,158,11,0.2)] transition-all transform active:scale-98 text-slate-950 text-sm tracking-wider pt-2.5">
                     اكتشف ثروتك الزمنية الآن 🚀
                 </button>
             </div>
 
             <!-- زر إضافة الويب لشاشة الهاتف الرئيسي -->
-            <div id="pwa-install-row" class="hidden max-w-sm mx-auto pt-2">
+            <div id="pwa-install-row" class="hidden max-w-sm mx-auto pt-1">
                 <button id="btn-pwa-install" 
-                    class="w-full py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 font-bold rounded-xl text-xs text-white shadow-[0_0_15px_rgba(6,182,212,0.3)] border border-cyan-400/20 tracking-wide transition-all transform active:scale-95">
-                    📲 إضافة هذا التطبيق الكوني لشاشة هاتفك الأساسية
-                </button>
-            </div>
-            
-            <div class="pt-4 border-t border-slate-800/60 max-w-sm mx-auto flex justify-center">
-                <button onclick="toggleLanguage()" id="lang-switch-btn" class="text-xs font-semibold text-slate-500 hover:text-amber-400 transition-colors flex items-center gap-1">
-                    🌐 Language
+                    class="w-full py-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 font-bold rounded-lg text-[10px] text-white shadow-[0_0_10px_rgba(6,182,212,0.2)] border border-cyan-400/20 tracking-wide transition-all transform active:scale-95">
+                    📲 إضافة التطبيق للشاشة الرئيسية
                 </button>
             </div>
         </div>
 
         <!-- ================= الشاشة 2: لوحة العدادات الحية والبطاقة النيونية ================= -->
-        <div id="view-results" class="hidden space-y-6">
-            <div class="text-center space-y-2">
-                <span id="t-quantum-badge" class="text-[11px] font-black tracking-widest bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/30 px-4 py-2 rounded-full text-amber-400 uppercase">
+        <div id="view-results" class="hidden space-y-4">
+            <div class="text-center space-y-1">
+                <span id="t-quantum-badge" class="text-[9px] font-black tracking-widest bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/30 px-3 py-1 rounded-full text-amber-400 uppercase">
                     ⚡ REAL-TIME QUANTUM COUNTERS
                 </span>
-                <h2 class="text-xl font-bold text-slate-200 pt-2"><span id="t-hello">يا</span> <span id="res-name" class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-orange-400 font-black"></span>، <span id="t-stats-lead">عدادات حياتك الآن:</span></h2>
+                <h2 class="text-base font-bold text-slate-200 pt-1.5"><span id="t-hello">يا</span> <span id="res-name" class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-orange-400 font-black"></span>، <span id="t-stats-lead">عدادات حياتك الآن:</span></h2>
             </div>
 
-            <!-- شبكة العدادات -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="bg-slate-950/90 p-5 rounded-2xl border border-slate-800 text-center shadow-inner flex flex-col items-center justify-center">
-                    <span id="t-c-seconds" class="text-xs font-bold text-slate-500 block mb-1.5">نبض الثواني الإجمالي ⏱️</span>
-                    <div id="count-seconds" class="cyber-font text-2xl font-black text-amber-400 tracking-widest drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]">0</div>
+            <!-- شبكة العدادات المستجيبة والمعدلة للموبايل -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div class="bg-slate-950/90 p-3 rounded-xl border border-slate-800 text-center shadow-inner flex flex-col items-center justify-center">
+                    <span id="t-c-seconds" class="text-[11px] font-bold text-slate-500 block mb-0.5">نبض الثواني الإجمالي ⏱️</span>
+                    <div id="count-seconds" class="cyber-font text-xl md:text-2xl font-black text-amber-400 tracking-wider drop-shadow-[0_0_8px_rgba(245,158,11,0.4)]">0</div>
                 </div>
-                <div class="bg-slate-950/90 p-5 rounded-2xl border border-slate-800 text-center shadow-inner flex flex-col items-center justify-center">
-                    <span id="t-c-heart" class="text-xs font-bold text-slate-500 block mb-1.5">عدد دقات قلبك التقريبية ❤️</span>
-                    <div id="count-heart" class="cyber-font text-2xl font-black text-rose-400 tracking-widest drop-shadow-[0_0_10px_rgba(244,63,94,0.5)]">0</div>
+                <div class="bg-slate-950/90 p-3 rounded-xl border border-slate-800 text-center shadow-inner flex flex-col items-center justify-center">
+                    <span id="t-c-heart" class="text-[11px] font-bold text-slate-500 block mb-0.5">عدد دقات قلبك التقريبية ❤️</span>
+                    <div id="count-heart" class="cyber-font text-xl md:text-2xl font-black text-rose-400 tracking-wider drop-shadow-[0_0_8px_rgba(244,63,94,0.4)]">0</div>
                 </div>
-                <div class="bg-slate-950/90 p-5 rounded-2xl border border-slate-800 text-center shadow-inner flex flex-col items-center justify-center">
-                    <span id="t-c-space" class="text-xs font-bold text-slate-500 block mb-1.5">رحلتك بالفضاء حول الشمس 🌍</span>
-                    <div id="count-space" class="cyber-font text-xl font-black text-cyan-400 tracking-widest drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]">0 كم</div>
+                <div class="bg-slate-950/90 p-3 rounded-xl border border-slate-800 text-center shadow-inner flex flex-col items-center justify-center">
+                    <span id="t-c-space" class="text-[11px] font-bold text-slate-500 block mb-0.5">رحلتك بالفضاء حول الشمس 🌍</span>
+                    <div id="count-space" class="cyber-font text-lg md:text-xl font-black text-cyan-400 tracking-wider drop-shadow-[0_0_8px_rgba(34,211,238,0.4)]">0 كم</div>
                 </div>
-                <div class="bg-slate-950/90 p-5 rounded-2xl border border-slate-800 text-center shadow-inner flex flex-col items-center justify-center">
-                    <span id="t-c-sleep" class="text-xs font-bold text-slate-500 block mb-1.5">أحلام ومرّات النوم التقريبية 💤</span>
-                    <div id="count-sleep" class="cyber-font text-xl font-black text-violet-400 tracking-widest drop-shadow-[0_0_10px_rgba(167,139,250,0.5)]">0 مرة</div>
+                <div class="bg-slate-950/90 p-3 rounded-xl border border-slate-800 text-center shadow-inner flex flex-col items-center justify-center">
+                    <span id="t-c-sleep" class="text-[11px] font-bold text-slate-500 block mb-0.5">أحلام ومرّات النوم التقريبية 💤</span>
+                    <div id="count-sleep" class="cyber-font text-lg md:text-xl font-black text-violet-400 tracking-wider drop-shadow-[0_0_8px_rgba(167,139,250,0.4)]">0 مرة</div>
                 </div>
             </div>
 
-            <!-- كارت السفر عبر الزمن النيوني المشع -->
-            <div class="border-t border-slate-800/80 pt-4 space-y-3">
-                <p id="t-screenshot-tip" class="text-xs text-slate-500 text-center">📸 التقط لقطة شاشة لبطاقتك الكونية الفاخرة لتحدي الأصدقاء:</p>
+            <!-- كارت السفر عبر الزمن النيوني المشع المحدث للهواتف -->
+            <div class="border-t border-slate-800/80 pt-3 space-y-2">
+                <p id="t-screenshot-tip" class="text-[10px] text-slate-500 text-center">📸 التقط لقطة شاشة لبطاقتك الكونية لتحدي الأصدقاء:</p>
                 
-                <div class="relative bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 border-2 border-amber-500/40 rounded-2xl p-6 text-center space-y-5 shadow-[0_0_30px_rgba(245,158,11,0.15)] overflow-hidden">
-                    <div class="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
+                <div class="relative bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 border border-amber-500/30 rounded-xl p-4 text-center space-y-3 shadow-[0_0_20px_rgba(245,158,11,0.1)] overflow-hidden">
+                    <div class="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
                     
-                    <div class="text-[10px] text-amber-400 font-bold tracking-widest uppercase cyber-font">Official Cosmic Time Certificate</div>
+                    <div id="t-cert-title" class="text-[9px] text-amber-400 font-bold tracking-widest uppercase cyber-font">Official Cosmic Time Certificate</div>
                     
-                    <div class="space-y-1">
-                        <h3 id="card-title-name" class="text-2xl font-black text-white tracking-wide">---</h3>
-                        <p id="card-rank" class="text-xs text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-orange-400 font-bold mt-1">---</p>
+                    <div class="space-y-0.5">
+                        <h3 id="card-title-name" class="text-xl font-black text-white tracking-wide">---</h3>
+                        <p id="card-rank" class="text-[11px] text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-orange-400 font-bold">---</p>
                     </div>
 
-                    <div class="bg-slate-950/90 rounded-xl py-3 px-6 border border-slate-800 max-w-xs mx-auto shadow-inner">
-                        <p id="t-card-days-lbl" class="text-slate-500 text-[10px] font-bold tracking-wider uppercase">العمر الإجمالي الكامل بالأيام:</p>
-                        <p id="card-days" class="cyber-font text-2xl font-black text-white mt-1">0</p>
+                    <div class="bg-slate-950/90 rounded-lg py-2 px-4 border border-slate-800 max-w-xs mx-auto shadow-inner">
+                        <p id="t-card-days-lbl" class="text-slate-500 text-[9px] font-bold tracking-wider uppercase">العمر الإجمالي الكامل بالأيام:</p>
+                        <p id="card-days" class="cyber-font text-xl font-black text-white mt-0.5">0</p>
                     </div>
 
-                    <p id="t-card-legal" class="text-[11px] text-slate-400 leading-relaxed px-4">
+                    <p id="t-card-legal" class="text-[10px] text-slate-400 leading-relaxed px-2">
                         بموجب هذا المستند الرقمي المشفر، تم إثبات أن هذا الكائن البشري يمتلك ثروة زمنية كونية خارقة تتحرك في نسيج هذا الفضاء اللامتناهي.
                     </p>
                 </div>
             </div>
 
-            <div class="p-2 bg-slate-950/50 border border-dashed border-slate-800 rounded-xl text-center text-xs text-slate-600">
+            <div class="p-1.5 bg-slate-950/50 border border-dashed border-slate-800 rounded-lg text-center text-[10px] text-slate-600">
                 Ads Space
             </div>
 
-            <!-- أزرار الإجراءات الفيروسية المضيئة المترجمة -->
-            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+            <!-- أزرار الإجراءات الفيروسية المضيئة المترجمة الهواتف -->
+            <div class="flex gap-2 pt-1">
                 <button onclick="window.location.reload()" id="t-btn-reset" 
-                    class="flex-1 py-4 bg-slate-800/80 hover:bg-slate-750 border border-slate-700/60 font-bold rounded-xl text-sm transition-all text-slate-300">
-                    🔄 حساب تاريخ آخر
+                    class="flex-1 py-2.5 bg-slate-800/80 hover:bg-slate-750 border border-slate-700/60 font-bold rounded-lg text-xs transition-all text-slate-300">
+                    🔄 تاريخ آخر
                 </button>
                 <button onclick="shareAppUrlWithHotText()" id="t-btn-share" 
-                    class="flex-1 py-4 bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 font-black rounded-xl text-sm text-slate-950 shadow-[0_4px_20px_rgba(245,158,11,0.25)] transition-all">
-                    🔗 شارك التحدي وافتح تطبيقات هاتفك 🚀
-                </button>
-            </div>
-            
-            <div class="pt-2 flex justify-center">
-                <button onclick="toggleLanguage()" id="lang-switch-btn-results" class="text-xs font-semibold text-slate-600 hover:text-amber-400 transition-colors flex items-center gap-1">
-                    🌐 Language
+                    class="flex-[2] py-2.5 bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 font-black rounded-lg text-xs text-slate-950 shadow-[0_4px_15px_rgba(245,158,11,0.2)] transition-all">
+                    🔗 شارك التحدي وافتح التطبيقات 🚀
                 </button>
             </div>
         </div>
 
     </div>
 
-    <!-- ================= زر المشاركة العائم المتطور السيبراني (Cyber HUD Widget) ================= -->
-    <div id="floating-share-container" class="fixed bottom-6 right-6 left-auto z-50 pointer-events-auto">
-        <div class="relative w-16 h-16 flex items-center justify-center group cursor-pointer" onclick="shareAppUrlWithHotText()">
+    <!-- ================= زر المشاركة العائم المتطور السيبراني المحفوظ ================= -->
+    <div id="floating-share-container" class="fixed bottom-4 right-4 left-auto z-50 pointer-events-auto">
+        <div class="relative w-12 h-12 flex items-center justify-center group cursor-pointer" onclick="shareAppUrlWithHotText()">
             <div class="absolute inset-0 border border-amber-500/40 rounded-full radar-ring pointer-events-none"></div>
             <div class="absolute inset-0 border border-orange-500/30 rounded-full radar-ring-delayed pointer-events-none"></div>
             <div class="absolute inset-2 bg-gradient-to-tr from-amber-500 to-orange-600 rounded-full blur-md opacity-40 group-hover:opacity-100 group-hover:blur-xl transition-all duration-500"></div>
             <button aria-label="Cyber Share System" 
-                class="absolute inset-0 bg-slate-950/80 backdrop-blur-md border-2 border-slate-800 group-hover:border-amber-400/80 rounded-full flex items-center justify-center shadow-[inset_0_0_15px_rgba(245,158,11,0.1)] transition-all duration-300 transform active:scale-90">
-                <div class="relative w-6 h-6 text-amber-400 group-hover:text-white transition-colors duration-300">
+                class="absolute inset-0 bg-slate-950/80 backdrop-blur-md border border-slate-800 group-hover:border-amber-400/80 rounded-full flex items-center justify-center shadow-[inset_0_0_10px_rgba(245,158,11,0.1)] transition-all duration-300 transform active:scale-90">
+                <div class="relative w-4 h-4 text-amber-400 group-hover:text-white transition-colors duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full">
                         <line x1="22" y1="2" x2="11" y2="13"></line>
                         <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                     </svg>
                 </div>
             </button>
-            <div class="absolute -inset-1 border border-dashed border-amber-500/10 rounded-full animate-[spin_20s_linear_infinite] pointer-events-none group-hover:border-amber-500/30"></div>
         </div>
     </div>
 
-    <!-- المنطق البرمجي والترجمات ومحرك الأسطوانات الديناميكي -->
+    <!-- المنطق البرمجي والترجمات ومحرك الأسطوانات الديناميكي الخماسي اللغات -->
     <script>
         const TRANSLATIONS = {
             ar: {
-                dir: "rtl", langBtn: "English 🌐", nextLang: "en", mainTitle: "مستكشف الكبسولة الزمنية",
+                dir: "rtl", mainTitle: "مستكشف الكبسولة الزمنية",
                 mainDesc: "ادخل بياناتك الشخصية لتفعيل العدادات البيولوجية والفلكية الحية التي تقيس رحلتك الإعجازية في الكون حتى هذه اللحظة.",
                 labelName: "الاسم أو اللقب:", placeholderName: "اكتب اسمك الكريم هنا...",
                 labelManualAge: "أو اكتب عمرك مباشرة بالسنوات:", placeholderManualAge: "مثال: 25",
                 labelDob: "أو اختر تاريخ ميلادك الحقيقي:", btnStart: "اكتشف ثروتك الزمنية الآن 🚀",
-                pwaInstallTxt: "📲 إضافة هذا التطبيق الكوني لشاشة هاتفك الأساسية",
+                pwaInstallTxt: "📲 إضافة التطبيق للشاشة الرئيسية",
                 quantumBadge: "⚡ REAL-TIME QUANTUM COUNTERS", hello: "يا", statsLead: "عدادات حياتك الآن:",
                 cSeconds: "نبض الثواني الإجمالي ⏱️", cHeart: "عدد دقات قلبك التقريبية ❤️",
                 cSpace: "رحلتك بالفضاء حول الشمس 🌍", cSpaceUnit: "كم", cSleep: "أحلام ومرّات النوم التقريبية 💤", cSleepUnit: "مرة",
-                screenshotTip: "📸 التقط لقطة شاشة لبطاقتك الكونية الفاخرة لتحدي الأصدقاء:", cardDaysLbl: "العمر الإجمالي الكامل بالأيام:",
+                screenshotTip: "📸 التقط لقطة شاشة لبطاقتك الكونية لتحدي الأصدقاء:", cardDaysLbl: "العمر الإجمالي الكامل بالأيام:",
+                certTitle: "Official Cosmic Time Certificate",
                 cardLegal: "بموجب هذا المستند الرقمي المشفر، تم إثبات أن هذا الكائن البشري يمتلك ثروة زمنية كونية خارقة تتحرك في نسيج هذا الفضاء اللامتناهي.",
-                btnReset: "🔄 حساب تاريخ آخر", btnShare: "🔗 شارك التحدي وافتح تطبيقات هاتفك 🚀",
-                alertCopy: "✨ تم النسخ بنجاح! اذهب والصقها الآن في مجموعات وحالات أصدقائك.",
+                btnReset: "🔄 تاريخ آخر", btnShare: "🔗 شارك التحدي وافتح التطبيقات 🚀",
                 pickDay: "اليوم", pickMonth: "الشهر", pickYear: "السنة", titleRank: "اللقب الكوني: ",
                 months: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
                 ranks: { elder: "الملياردير الزمني العظيم 👑", mid: "المسافر المخضرم عبر العصور 🌀", young: "امبراطور الثواني السريعة ⚡", fresh: "المستكشف الزمني الناشئ 🚀" },
                 viralMsg: (name, days, rank, url) => `🚨 صدمة عمري! جربت هالموقع وطلع عشت أكثر من ${days} يوم وقلبي دق مليارات المرات.. وطلعت برحلة بالفضاء حول الشمس ملايين الكيلومترات وأنا جالس مكاني! 🤯🪐\n\nالموقع عطاني لقب: [ ${rank} ] 👑🔥\n\nاتحداكم تطلع أرقامكم وتنافسوني، كم ثانية عشتوا حتى الآن؟ ادخل اسمك وتاريخ ميلادك وشوف وعمرك يطير بالثواني! 👇🏃‍♂️\n${url}`
             },
             en: {
-                dir: "ltr", langBtn: "العربية 🌐", nextLang: "ar", mainTitle: "Cosmic Time Explorer",
+                dir: "ltr", mainTitle: "Cosmic Time Explorer",
                 mainDesc: "Enter your personal details to sync with live biological and astronomical counters measuring your miraculous journey through the cosmos.",
                 labelName: "Name or Nickname:", placeholderName: "Type your name here...",
                 labelManualAge: "Or enter your age directly in years:", placeholderManualAge: "e.g. 25",
@@ -287,14 +287,90 @@
                 quantumBadge: "⚡ REAL-TIME QUANTUM COUNTERS", hello: "Hey", statsLead: "your live cosmic stats right now:",
                 cSeconds: "Total Seconds on Earth ⏱️", cHeart: "Approximate Heartbeats ❤️",
                 cSpace: "Space Traveled Around the Sun 🌍", cSpaceUnit: "km", cSleep: "Estimated Total Dreams & Sleep 💤", cSleepUnit: "times",
-                screenshotTip: "📸 Take a screenshot of your premium space certificate to challenge your friends:", cardDaysLbl: "Total Lifespan in Full Days:",
+                screenshotTip: "📸 Take a screenshot of your cosmic card to challenge friends:", cardDaysLbl: "Total Lifespan in Full Days:",
+                certTitle: "Official Cosmic Time Certificate",
                 cardLegal: "By virtue of this encrypted space document, it is certified that this human entity possesses an immense cosmic temporal wealth ticking dynamically within the fabric of space-time.",
                 btnReset: "🔄 Check Another Date", btnShare: "🔗 Share Challenge & Open Apps 🚀",
-                alertCopy: "✨ Copied successfully! Go paste it in your WhatsApp groups or status.",
                 pickDay: "Day", pickMonth: "Month", pickYear: "Year", titleRank: "Cosmic Title: ",
                 months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
                 ranks: { elder: "The Ultimate Time Billionaire 👑", mid: "The Master Time-Traveler 🌀", young: "Emperor of Rapid Seconds ⚡", fresh: "The Rising Cosmic Nomad 🚀" },
                 viralMsg: (name, days, rank, url) => `🚨 Mind Blown! I just checked my stats on this site and found out I've lived for over ${days} days, my heart beat billions of times, and I've traveled millions of kilometers through deep space while sitting on my couch! 🤯🪐\n\nIt gave me the Cosmic Title: [ ${rank} ] 👑🔥\n\nI dare you to calculate your stats and beat me! 👇🏃‍♂️\n\n${url}`
+            },
+            de: {
+                dir: "ltr", mainTitle: "Kosmischer Zeitforscher",
+                mainDesc: "Geben Sie Ihre persönlichen Daten ein, um biologische und astronomische Echtzeit-Zähler mit Ihrer wunderbaren Reise durch den Kosmos zu synchronisieren.",
+                labelName: "Name oder Spitzname:", placeholderName: "Geben Sie Ihren Namen ein...",
+                labelManualAge: "Oder geben Sie Ihr Alter direkt in Jahren ein:", placeholderManualAge: "z.B. 25",
+                labelDob: "Oder wählen Sie Ihr echtes Geburtsdatum:", btnStart: "Entsperren Sie Ihren kosmischen Reichtum 🚀",
+                pwaInstallTxt: "📲 Zum Startbildschirm hinzufügen",
+                quantumBadge: "⚡ QUANTENZÄHLER IN ECHTZEIT", hello: "Hallo", statsLead: "Deine aktuellen kosmischen Statistiken:",
+                cSeconds: "Gesamtsekunden auf der Erde ⏱️", cHeart: "Ungefähre Herzschläge ❤️",
+                cSpace: "Reise im Weltraum um die Sonne 🌍", cSpaceUnit: "km", cSleep: "Geschätzte Träume & Schlaf 💤", cSleepUnit: "Male",
+                screenshotTip: "📸 Machen Sie einen Screenshot Ihres Zertifikats:", cardDaysLbl: "Gesamtlebensdauer in vollen Tagen:",
+                certTitle: "Offizielles kosmisches Zeit-Zertifikat",
+                cardLegal: "Aufgrund dieses Weltraumdokuments wird bescheinigt, dass dieses menschliche Wesen über einen immensen kosmischen Zeitreichtum verfügt.",
+                btnReset: "🔄 Anderes Datum prüfen", btnShare: "🔗 Herausforderung teilen 🚀",
+                pickDay: "Tag", pickMonth: "Monat", pickYear: "Jahr", titleRank: "Kosmischer Titel: ",
+                months: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+                ranks: { elder: "Der ultimative Zeitmillionär 👑", mid: "Der Meister-Zeitreisende 🌀", young: "Kaiser der schnellen Sekunden ⚡", fresh: "Der aufstrebende kosmische Nomade 🚀" },
+                viralMsg: (name, days, rank, url) => `🚨 Wahnsinn! Ich habe meine Statistiken überprüft: Ich habe über ${days} Tage gelebt. 🤯🪐\n\nMein kosmischer Titel: [ ${rank} ] 👑🔥\n\n${url}`
+            },
+            es: {
+                dir: "ltr", mainTitle: "Explorador del Tiempo Cósmico",
+                mainDesc: "Introduce tus datos personales para sincronizarte con contadores biológicos y astronómicos en vivo.",
+                labelName: "Nombre o Apodo:", placeholderName: "Escribe tu nombre aquí...",
+                labelManualAge: "O introduce tu edad directamente en años:", placeholderManualAge: "ej. 25",
+                labelDob: "O selecciona tu fecha real de nacimiento:", btnStart: "Desbloquea tu Riqueza Cósmica Ahora 🚀",
+                pwaInstallTxt: "📲 Añadir a la pantalla de inicio",
+                quantumBadge: "⚡ CONTADORES CUÁNTICOS EN TIEMPO REAL", hello: "Hola", statsLead: "tus estadísticas cósmicas en vivo:",
+                cSeconds: "Segundos Totales en la Tierra ⏱️", cHeart: "Latidos Cardíacos Aproximados ❤️",
+                cSpace: "Espacio Recorrido Alrededor del Sol 🌍", cSpaceUnit: "km", cSleep: "Total Estimado de Sueños y Descanso 💤", cSleepUnit: "veces",
+                screenshotTip: "📸 Haz una captura de pantalla:", cardDaysLbl: "Vida útil total en días completos:",
+                certTitle: "Certificado Oficial de Tiempo Cósmico",
+                cardLegal: "En virtud de este documento espacial encriptado, se certifica que esta entidad humana posee una inmensa riqueza temporal cósmica.",
+                btnReset: "🔄 Consultar Otra Fecha", btnShare: "🔗 Compartir Desafío 🚀",
+                pickDay: "Día", pickMonth: "Mes", pickYear: "Año", titleRank: "Título Cósmico: ",
+                months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+                ranks: { elder: "El Multimillonario del Tiempo Supremo 👑", mid: "El Maestro del Tiempo Viajero 🌀", young: "Emperador de los Segundos Rápidos ⚡", fresh: "El Nómada Cósmico Naciente 🚀" },
+                viralMsg: (name, days, rank, url) => `🚨 ¡Impresionante! Revisé mis estadísticas y descubrí que he vivido más de ${days} días. 🤯🪐\n\nTítulo Cósmico: [ ${rank} ] 👑🔥\n\n${url}`
+            },
+            tr: {
+                dir: "ltr", mainTitle: "Kozmik Zaman Gezgini",
+                mainDesc: "Kozmostaki mucizevi yolculuğunuzu ölçen canlı sayaçlarla senkronize olun.",
+                labelName: "İsim veya Takma Ad:", placeholderName: "Buraya isminizi yazın...",
+                labelManualAge: "Veya yaşınızı doğrudan yıl olarak girin:", placeholderManualAge: "örn. 25",
+                labelDob: "Veya gerçek doğum tarihinizi seçin:", btnStart: "Kozmik Servetini Şimdi Aç 🚀",
+                pwaInstallTxt: "📲 Ana Ekrana Ekle",
+                quantumBadge: "⚡ GERÇEK ZAMANLI QUANTUM SAYAÇLARI", hello: "Merhaba", statsLead: "şu anki canlı kozmik istatistiklerin:",
+                cSeconds: "Dünyadaki Toplam Saniye ⏱️", cHeart: "Yaklaşık Kalp Atışı ❤️",
+                cSpace: "Güneş Etrafında Kat Edilen Mesafe 🌍", cSpaceUnit: "km", cSleep: "Tahmini Toplam Rüya ve Uyku 💤", cSleepUnit: "kez",
+                screenshotTip: "📸 Ekran görüntüsü al:", cardDaysLbl: "Tam Gün Olarak Toplam Ömür:",
+                certTitle: "Resmi Kozmik Zaman Sertifikası",
+                cardLegal: "Bu şifreli uzay belgesi uyarınca, muazzam bir kozmik zamansal zenginliğe sahip olduğunuz onaylanmıştır.",
+                btnReset: "🔄 Başka Bir Tarih Kontrol Et", btnShare: "🔗 Meydan Okumayı Paylaş 🚀",
+                pickDay: "Gün", pickMonth: "Ay", pickYear: "Yıl", titleRank: "Kozmik Unvan: ",
+                months: ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"],
+                ranks: { elder: "En Büyük Zaman Milyarderi 👑", mid: "Usta Zaman Gezgini 🌀", young: "Hızlı Saniyelerin İmparatoru ⚡", fresh: "Yükselen Kozmik Göçebe 🚀" },
+                viralMsg: (name, days, rank, url) => `🚨 Aklım Başından Gitti! Bu sitede istatistiklerimi kontrol ettim ve ${days} günden fazla yaşadığımı gördüm! Kozmik Unvanım: [ ${rank} ] 👑🔥\n\n${url}`
+            },
+            zh: {
+                dir: "ltr", mainTitle: "宇宙时间探索者",
+                mainDesc: "输入您的个人信息与实时计数器同步，测量您在时空中的奇妙旅程。",
+                labelName: "姓名或昵称:", placeholderName: "在此处输入您的名字...",
+                labelManualAge: "或直接输入您的年龄（岁）:", placeholderManualAge: "例如：25",
+                labelDob: "或选择您的真实出生日期:", btnStart: "立即解锁您的宇宙财富 🚀",
+                pwaInstallTxt: "📲 添加至主屏幕",
+                quantumBadge: "⚡ 实时量子计数器", hello: "嘿", statsLead: "您当前的实时宇宙数据：",
+                cSeconds: "地球上的总秒数 ⏱️", cHeart: "约心跳次数 ❤️",
+                cSpace: "绕太阳运行的空间距离 🌍", cSpaceUnit: "公里", cSleep: "估计总睡眠与梦境 💤", cSleepUnit: "次",
+                screenshotTip: "📸 截屏您的专属宇宙证书以挑战好友：", cardDaysLbl: "完整天数的总寿命:",
+                certTitle: "官方宇宙时间证书",
+                cardLegal: "特此证明该人类实体拥有在时空结构中动态流转的巨大宇宙时间财富。",
+                btnReset: "🔄 检查其他日期", btnShare: "🔗 分享挑战 🚀",
+                pickDay: "日", pickMonth: "月", pickYear: "年", titleRank: "宇宙称号: ",
+                months: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+                ranks: { elder: "终极时间亿万富翁 👑", mid: "时空旅行大师 🌀", young: "极速秒之皇帝 ⚡", fresh: "崛起的宇宙游牧者 🚀" },
+                viralMsg: (name, days, rank, url) => `🚨 惊呆了！我刚刚在这个网站上查了我的宇宙数据，发现自己已经活 over 了 ${days} 天，心跳达数十亿次！称号：[ ${rank} ] 👑🔥\n\n${url}`
             }
         };
 
@@ -304,12 +380,19 @@
         let globalUserName = "";
         let globalRank = "";
         let globalDays = 0;
-        let deferredPrompt;
 
         window.addEventListener('DOMContentLoaded', () => {
             const browserLang = (navigator.language || navigator.userLanguage).toLowerCase();
-            currentLang = browserLang.startsWith('en') ? 'en' : 'ar';
+            if (browserLang.startsWith('de')) currentLang = 'de';
+            else if (browserLang.startsWith('es')) currentLang = 'es';
+            else if (browserLang.startsWith('tr')) currentLang = 'tr';
+            else if (browserLang.startsWith('zh')) currentLang = 'zh';
+            else if (browserLang.startsWith('en')) currentLang = 'en';
+            else currentLang = 'ar';
             
+            const switcher = document.getElementById('lang-switcher');
+            if(switcher) switcher.value = currentLang;
+
             buildRollerSelects();
             applyLanguage();
         });
@@ -383,9 +466,16 @@
             document.documentElement.dir = langData.dir;
             document.body.setAttribute('dir', langData.dir);
 
-            safeSetText('lang-switch-btn', langData.langBtn);
-            if(document.getElementById('lang-switch-btn-results')) {
-                safeSetText('lang-switch-btn-results', langData.langBtn);
+            // تعديل موقع زر المشاركة العائم بناءً على اتجاه اللغة تلقائياً
+            const floatingBtn = document.getElementById('floating-share-container');
+            if (floatingBtn) {
+                if (langData.dir === 'rtl') {
+                    floatingBtn.classList.remove('left-4', 'right-auto');
+                    floatingBtn.classList.add('right-4', 'left-auto');
+                } else {
+                    floatingBtn.classList.remove('right-4', 'left-auto');
+                    floatingBtn.classList.add('left-4', 'right-auto');
+                }
             }
             
             safeSetText('t-main-title', langData.mainTitle);
@@ -418,13 +508,14 @@
             safeSetText('t-c-sleep', langData.cSleep);
             safeSetText('t-screenshot-tip', langData.screenshotTip);
             safeSetText('t-card-days-lbl', langData.cardDaysLbl);
+            safeSetText('t-cert-title', langData.certTitle);
             safeSetText('t-card-legal', langData.cardLegal);
             safeSetText('t-btn-reset', langData.btnReset);
             safeSetText('t-btn-share', langData.btnShare);
         }
 
-        function toggleLanguage() {
-            currentLang = currentLang === 'ar' ? 'en' : 'ar';
+        function switchLanguage(lang) {
+            currentLang = lang;
             applyLanguage();
             if (birthTimestamp > 0) {
                 determineRankAndLabels();
